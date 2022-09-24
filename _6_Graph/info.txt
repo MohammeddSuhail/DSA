@@ -1,0 +1,130 @@
+1. Directed graph
+
+2. Undirected _6_Graph
+
+
+Cyclic graph
+Acyclic graph
+
+DAG(Directed Acyclic graph)
+
+
+Path:
+A node can't appear twice in a path
+
+
+
+
+
+In undirected graph:
+
+Degree of node: Total number of edges going in or out
+
+Total degree of a graph = 2 * number of edges
+
+
+
+Directed graph:
+
+In-degree
+Out-degree
+
+
+
+
+
+
+Edge may have weight
+
+If not given we assume weight as 1
+
+
+
+
+
+
+
+Representing _6_Graph:
+
+1. Adjacency matrix:
+If there are 'n' nodes
+It Uses adj[n+1][n+1] 2D array
+So space complexity: n*n
+
+If there is an edge between 1 and 3, then
+
+In undirected graph:
+adj[1][3] = 1;
+adj[3][1] = 1;
+
+In directed graph:
+adj[1][3] = 1;
+
+Rest of the indices will automatically set to 0
+
+
+
+
+2. Adjacency List:
+Maintain an ArrayList<ArrayList<Integer>> adj
+Basically list at each index maintains a list of it's neighbours
+
+If there is an edge between 1 and 3, then
+
+In undirected graph:
+adj.get(1).add(3);
+adj.get(3).add(1);
+
+In directed graph:
+adj.get(1).add(3);
+
+Here for each edge, u stored twice(i.e, their ends)
+So space complexity: 2*E
+
+
+
+
+
+For weighted graph:
+Adj matrix:
+adj[u][v] = wt
+
+Adjacency List:
+ArrayList<ArrayList<Pair>> adj
+
+
+
+
+
+Connected Components:
+A graph may have many components(one or nodes connected nodes)
+These components are not linked to each other
+So we cannot start from a node of a component and hope to traverse all the nodes of graph,
+because it can't reach the nodes other components
+
+So use a visited[n+1] array
+Which is used as
+for(int i=1;i<n+1;i++){
+    if(visited[i] != 1)
+        traverse(i);
+}
+
+
+
+
+
+
+
+
+
+
+Bipartite Graph:
+U can color the graph with 2 colors, such that no two adjacent nodes have same color.
+
+If a graph doesn't have a cycle, then it is a bipartite graph(because it can be colored using 2 colors)
+
+Graph with even number of nodes in cycle can be bipartite
+
+Graph with odd number of nodes in cycle cannot be bipartite
+
+Can be checked using BFS/DFS traversal

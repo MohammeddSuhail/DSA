@@ -1,0 +1,21 @@
+DFS in Binary Trees: pre, in, post
+
+BFS in Binary Trees: Level Order Traversal
+
+
+
+
+In BST for every node,
+every val on left < node.val  and every val right is > node.val
+
+In-order of BST is always sorted
+
+
+
+If pre-order and post-order are given,
+you can't construct a binary unique tree
+
+
+Can construct a binary unique tree,
+if in-order and pre-order is given
+if in-order and post-order is given

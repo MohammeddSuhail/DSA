@@ -1,0 +1,8 @@
+Sub-Array: is contiguous
+
+Sub-Sequence: can be cointiguous/non-cointiguous, but it should follow order
+
+permutation: any order ,but must have all ele
+
+
+
