@@ -1,0 +1,124 @@
+
+_3_Recursion_Sub_Array_String_Perm Identification:
+
+1.Choice
+2.Optimal(like max,min,largest)     
+
+
+
+1 func call no dp
+if 2 recursive func call chances are of _4_DP
+
+
+
+
+
+
+Pattern 1:
+Knapsack:
+
+1.Fractional Knapsack:  No _4_DP
+  Greedy, can put ele's in fraction
+
+
+
+2.0-1 Knapsack:  _4_DP
+  element is completely put or not put at all
+
+3.Unbounded Knapsack: _4_DP
+ Same ele can be put many times
+
+
+
+
+
+
+Recursive to _4_DP: complexity reduces from 2^n to n^2
+1.memoization
+
+2.bottom up
+Initialize left col and top row
+                       
+we will use a matrix [n+1][w+1] , n is number of ele's in wieght/val array and w is knapsack limit
+
+the first row and first column is initialization
+the base condition of recursion becomes initialization in _4_DP
+ 
+
+
+
+
+In problems if only 1 array is given treat it as weight array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pattern 2:
+LCS(Longest Common Subsequence)
+
+
+In t
+x-axis: 1st string ele from 1 to m
+y-axis: 2nd string ele from 1 to n
+
+criteria for identifying:
+  1. Input: Two strings X and Y
+  2. Sequence
+  3. Output: int
+If any 2 matches possibility of the question can be done using LCS
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pattern 3:
+MCM(Matrix Chain Multiplication):
+
+format:
+
+return_type solve(array/string , int i ,int j){
+	if(i>j)
+          return 0;
+	
+	for(int k=i;k<j;k++){
+	   //calculation             - or something
+	   temp_ans = solve(arr,i,k) + solve(arr,k+1,j)
+           ans = someFunc(tdmp_ans);
+	}
+	return ans;
+}
+
+
+identifying: if partition the array/string is involved
+
+
+
+
+
+
+
+

@@ -1,0 +1,167 @@
+Used in sub-array or sub-string problems
+Array must have only +ve elements to apply Sliding Window 
+
+Fixed size:
+
+window size will be given
+
+Here window size is fixed
+
+
+int i=0,j=0;
+int n=arr.length;
+
+while(j<n){
+
+   some calculation like sum etc;
+
+   if( (j-i+1) < k ){
+       //window size has not yet hit so j++
+       j++;
+   }else{      //if((j-i+1) == k)
+    some calculations when window size hits;
+    do some calculation for removing ith index ,like remove arr[i] from sum etc;
+    //we maintain the window size by i++,j++
+    i++; //removing ith index from window
+    j++; //including jth index in the window
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+Variable size:
+
+Condition will be given
+
+Here window size is not fixed but a condition will be given(like max sum sub-array)
+
+let's say sum of sub array is k (condition)
+
+
+
+
+
+
+format 1:
+
+
+int i=0,j=0;
+int n=arr.length;
+
+while(j<n){
+
+   calculation like sum+=arr[j];
+
+   if( condition < k ){
+       j++;
+   }else if(condition == k){
+       ans <- calculation
+       j++;
+   }else if(condition>k){
+
+       while(condition>k){
+          remove calculation for i;
+          i++;
+       }
+       //checking condition == k after removing arr[i]
+       if(condition == k){
+          ans <- calculation
+       }
+       //now condition is not > k so j++
+       j++;
+   }
+
+}
+
+
+eg:
+
+int i=0, j=0 , n = arr.length;
+int sum = 0 , maxSize = 0;
+boolean entered = false;
+
+while(j<n){
+
+       sum += arr[j];
+       
+       if(sum<k){
+            j++;
+        }else if(sum==k){
+            if((j-i+1) > maxSize) {
+                 maxSize = j - i + 1;
+            }
+            j++;
+        }else if(sum>k){
+                while(sum>k){
+                    sum-=arr[i];
+                    i++;
+                }
+                //now sum will sum is not > k so check if sum==k before adding new ele, j++
+                if(sum==k){
+                    if((j-i+1) > maxSize) {
+                        maxSize = j - i + 1;
+                    }
+                }
+                j++;
+        }
+}
+return maxSize;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+prob 1:
+
+maximum size of subarray whose sum is k
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pick Toy Problem:
+Allowed to pick toys in a line and only 2 toys allowed.
+
+ans,
+It uses longest sub-string with k unique character algo, here k will be 2.
+
+                                
+
+
+
+
+
