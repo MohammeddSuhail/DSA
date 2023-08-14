@@ -1,0 +1,4 @@
+T=s.nextInt();
+s.nextLine();//because after nextInt() , it will ignore nextLine()
+
+

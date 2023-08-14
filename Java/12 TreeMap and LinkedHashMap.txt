@@ -1,0 +1,40 @@
+HashMap:
+HashMap the elements are not in sorted order.
+It doesn't even maintain order of insertion.
+
+
+
+
+TreeMap:
+Automatically sorted and stored based on key.
+
+TreeMap<Integer,Integer> tm = new TreeMap<>();
+
+tm.put(9,4);
+tm.put(4,4);
+tm.put(10,20);
+tm.put(7,4);
+tm.put(1,4);
+
+System.out.println(tm);
+
+=> {1=4, 4=4, 7=4, 9=4, 10=20}
+
+
+
+
+
+LinkedHashMap:
+Maintains order of insertion
+
+LinkedHashMap<Integer,Integer> lm = new LinkedHashMap<>();
+
+lm.put(9,4);
+lm.put(4,4);
+lm.put(10,20);
+lm.put(7,4);
+lm.put(1,4);
+
+System.out.println(lm);
+
+=>{9=4, 4=4, 10=20, 7=4, 1=4}

@@ -1,0 +1,9 @@
+boolean can have only true and false
+By default it will be false
+
+
+
+
+
+Boolean can true, false and null
+By default it will be null

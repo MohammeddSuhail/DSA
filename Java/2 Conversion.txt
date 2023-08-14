@@ -1,0 +1,48 @@
+(char)97 -> a
+(char)122 -> z
+
+(int) 'a' -> 97(acsii)           or   'a' + 0   
+
+(char)65 -> A
+(char)90 -> Z
+
+
+
+
+parseInt: String to int
+int i=Integer.parseInt("200");  //now i=200
+
+
+
+Char to int:
+int num=Character.getNumericValue("5");
+
+
+
+
+
+
+
+
+
+
+Char to String:
+
+char c='M';
+String s=Character.toString(c);
+
+String s = ""+c;
+
+
+
+
+
+valueOf and toString:
+int i=10;  
+String s=String.valueOf(i);//Now it will return "10"  
+
+
+int i=10;  
+String s=Integer.toString(i);//Now it will return "10"  
+
+String s=""+i;

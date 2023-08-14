@@ -1,0 +1,9 @@
+char s='5';
+int a=Character.getNumericValue(s);  //a=5
+int b=(int) 'A';   //b=65 , ascii so
+int c=(int) s;    //random int value
+
+System.out.println(Character.isDigit('5'));
+System.out.println(Character.isAlphabetic('M'));
+System.out.println(Character.toUpperCase('r'));  //not in place
+System.out.println(Character.toLowerCase('R'));

@@ -1,0 +1,141 @@
+link:
+https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html
+
+
+In HashMap the elements are not in sorted order.
+It doesn't even maintain order of insertion.
+
+
+
+
+import java.util.HashMap;
+
+
+HashMap<Character,Integer> hashMap = new HashMap<>();
+
+hashMap.put('A',4);
+hashMap.put('B',9);
+hashMap.put('C',10);
+hashMap.put('D',9);
+
+
+System.out.println(hashMap.get('A'));  // if 'A' is not present then it will return 'null' 
+
+
+
+
+//             key,value
+hashMap.remove('D',9);
+//             key
+hashMap.remove('C');
+
+
+
+//             key,value
+hashMap.replace('A',45);
+//           key,old value, new value
+hashMap.replace('B',9,25);
+
+
+
+//copies a HashMap
+HashMap<Character,Integer> hmap2 = (HashMap<Character, Integer>) hashMap.clone();
+System.out.println(hmap2);
+
+
+
+//clears(deleting everything in it) a map
+hmap2.clear();
+System.out.println(hmap2);
+
+
+
+
+System.out.println(hashMap.isEmpty());
+
+
+System.out.println(hashMap.size());
+
+
+
+System.out.println(hashMap);
+
+
+
+HashMap<Character,Integer> h = new HashMap<>();
+
+//looping through HashMap
+for(HashMap.Entry<Character,Integer> entry : h.entrySet()){
+        System.out.println("Key: "+ entry.getKey() + " Value: " + entry.getValue());
+}
+
+
+
+//looping through keys of HashMap
+for(Character c : hashMap.keySet()){
+       System.out.println(c);
+}
+
+
+
+//looping through values of HashMap
+for (Integer i : hashMap.values()){
+         System.out.println(i);
+}
+
+
+
+
+
+
+HashMap<Integer,Integer> h1 = new HashMap<>();
+h1.put(2,122);
+h1.put(1,254);
+
+HashMap<Integer,Integer> h2 = new HashMap<>();
+h2.put(1,254);
+h2.put(2,122);
+
+System.out.println(h1.equals(h2));  =>true
+
+
+
+
+
+
+
+
+
+*****
+
+
+
+Example:
+HashMap<Integer,Character> hashMap = new HashMap<>();
+hashMap.put(10,'A');
+hashMap.put(9,'B');
+hashMap.put(1,'D');
+hashMap.put(9,'C');
+System.out.println(hashMap);
+
+hashMap:
+{1=D, 9=C, 10=A}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Map:
+
+Map<Integer,Integer> map = new HashMap<>();

@@ -1,0 +1,30 @@
+HashSet<Integer> h = new HashSet<>();
+
+h.add(9);
+h.add(7);
+h.add(1);
+
+System.out.println(h);                 //[1, 7, 9]
+System.out.println(h.contains(7));     //true
+System.out.println(h.isEmpty());       //false
+
+h.remove(7);
+System.out.println(h);                 //[1, 9]
+
+String str = h.toString();             
+System.out.println(str.charAt(0));     //[
+
+Integer[] arr = h.toArray(new Integer[0]);    
+System.out.println(Arrays.toString(arr));       //[1, 9]
+
+System.out.println(h.size());       //2
+
+HashSet<Integer> h2 = new HashSet<>();
+h2.add(9);
+h2.add(7);
+
+System.out.println(h.equals(h2));    //false
+
+
+
+

@@ -1,0 +1,33 @@
+ArrayDeque<Integer> q = new ArrayDeque<>();
+
+q.getFirst()
+q.getLast()
+
+
+q.add(ele)     //adds last
+q.addFirst(ele)
+q.addLast(ele)
+
+
+q.remove()    //removes first
+q.remove(ele)
+q.removeFirst()
+q.removeLast()
+
+q.isEmpty()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

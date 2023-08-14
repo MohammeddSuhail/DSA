@@ -1,0 +1,14 @@
+int[] arr = {1,2,3};
+for (int i: arr) {
+    System.out.println(i);
+}
+
+
+ 
+int[][] arrr = {{2,3,6},{5,1,2}};
+for (int[] row : arrr) {
+    System.out.println(Arrays.toString(row));
+}
+
+
+

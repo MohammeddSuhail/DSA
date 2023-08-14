@@ -1,0 +1,10 @@
+StringBuilder:
+
+The StringBuilder in Java represents a mutable sequence of characters.
+
+
+https://www.geeksforgeeks.org/stringbuilder-class-in-java-with-examples/#
+
+
+StringBuilder str = new StringBuilder();
+str.append("GFG");

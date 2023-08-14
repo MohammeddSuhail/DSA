@@ -1,0 +1,17 @@
+System.out.println(Math.abs(-1));     //1
+System.out.println(Math.sqrt(25));    //5.0
+System.out.println(Math.max(5,10));   //10
+System.out.println(Math.min(5,10));   //5
+System.out.println(Math.ceil(5.3));   //6.0
+System.out.println(Math.floor(5.8));  //5.0
+System.out.println(Math.pow(10,2));   //100
+System.out.println(Math.round(2.6));  //3
+System.out.println(Math.log(10));     //2.302 natural log
+System.out.println(Math.log10(10));   //1.0
+System.out.println(Math.random());    //random number from 0.0 - .99 
+System.out.println(Math.sin(2.5));   
+System.out.println(Math.cos(2.5));
+System.out.println(Math.tan(2.5));
+System.out.println(Math.PI);
+
+
